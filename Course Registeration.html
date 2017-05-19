@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Course Registeration</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/fav.ico" />	
+
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/dropdown_enhancement.css" rel="stylesheet">
+	<link href="css/bootstrap-slider.css" rel="stylesheet">
+	<link href="css/StudentMain.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top"><div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="Search Result.html">Rizzmi</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav ">
+    	<li><a href="Search Result.html"><i class="glyphicon glyphicon-home"> </i> Home</a></li>
+        <li><a href="Profile.html"><i class="glyphicon glyphicon-user"> </i> Profile</a></li>
+        <li><span class="badge badge-important">2</span><a href="#"><i class="fa fa-bell-o fa-lg" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
+        <li>
+	    <form class="navbar-form">
+		<div class="input-group">
+			<div class="input-group-btn">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1"> Browse <span class="caret"></span></button> 
+				<ul class="dropdown-menu"> 
+					<li><a href="#">Action</a></li> 
+					<li><a href="#">Another action</a></li> 
+					<li><a href="#">Something else here</a></li> 
+					<li class="divider"></li> 
+					<li><a href="#">Separated link</a></li>
+				</ul>
+			</div>
+			<input type="text" class="form-control" placeholder="Search" value="">
+			<div class="input-group-btn"><a class="btn btn-success" href="Search Result.html"><i class="glyphicon glyphicon-search"></i></a></div>
+		</div>
+    	</form>
+        </li>
+    </ul>
+
+	<ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
+                <img src="img/me-flat.png" class="img-responsive img-circle" width="30px" height="30px">
+            </span>
+            <span class="user-name">John Doe</span>
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <div class="navbar-content"><div class="row">
+                        <div class="col-md-4">
+                            <img src="img/me-flat.png" class="img-responsive" style="margin-bottom: 15px;"/>
+                        </div>
+                        <div class="col-md-8">
+                            <span>John Doe</span>
+                            <p class="text-muted small">example@pods.tld</p>
+                            <div class="divider">
+                            </div>
+                            <a href="Profile.html" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-user" aria-hidden="true"></i> Profile</a>
+                            <a href="#" class="btn btn-info btn-xs"><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> Settings</a>
+                            <a href="#" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-off" aria-hidden="true"></i> </a>
+                        </div>
+                </div></div>
+        	</li>
+        </ul>
+	    </li>
+    </ul>
+
+</div>
+</div></nav>
+
+	<div class="container">
+		<!-- body start -->
+
+		<!-- nav start -->
+		<nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" style="z-index: 10; left:5%; top: 50px;padding-top: 10px; background-color: white; border-bottom: 0;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h3 style="padding: 10px; margin-bottom: 10px; margin-top:10px;"> <strong>Building effective social media strategy</strong> - Registeration Form</h3>
+							</div>
+
+							<div class="col-md-6 hidden">
+								<ul class="nav nav-pills" style="padding-top: 15px;">
+									<li><a href="#Register" data-toggle="tab">Register</a></li>
+									<li><a href="#Basic" data-toggle="tab">Basic</a></li>
+									<li><a href="#Affiliate" data-toggle="tab">Affiliate</a></li>
+									<li><a href="#Payment" data-toggle="tab">Payment</a></li>
+									<li><a href="#Result" data-toggle="tab">Result</a></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- nav end -->
+
+		<div class="row">
+			<section class="col-xs-9" style="margin-top: 110px;">
+				<div class="tab-content">
+					<div class="tab-pane active" id="Register">
+						<div class="content-pane">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3">
+									<div class="main">
+									<h3>Sign in with </h3>
+									<div class="row">
+										<div class="col-md-12">
+										<a href="#" class="btn btn-lg btn-primary btn-block toTwo">Facebook</a>
+										</div>
+									</div>
+									<hr>
+									<form role="form">
+										<div class="form-group">
+										<label for="inputUsernameEmail">Username or email</label>
+										<input type="text" class="form-control" id="inputUsernameEmail">
+										</div>
+										<div class="form-group">
+										<a class="pull-right" href="#">Forgot password?</a>
+										<label for="inputPassword">Password</label>
+										<input type="password" class="form-control" id="inputPassword">
+										</div>
+										<div class="checkbox pull-right">
+										<label>
+											<input type="checkbox">
+											Remember me </label>
+										</div>
+										<a class="btn btn btn-primary toTwo">
+										Log In
+										</a> or 
+										<a class="btn btn btn-success toTwo">
+										Sign Up
+										</a>
+									</form>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane" id="Basic">
+						<div class="content-pane">
+							<div class="container-fluid">
+								<!-- basic information form -->
+								<form class="form-horizontal">
+									<fieldset>
+										<h3>Basic information</h3><br>
+										<!-- Text input-->
+										<div class="form-group">
+											<label class="col-md-2 control-label" for="name">Name</label>
+											<div class="col-md-5">
+												<input id="name" name="name" type="text" placeholder="Enter Name" class="form-control input-md" required="">
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group">
+											<label class="col-md-2 control-label" for="email">email</label>
+											<div class="col-md-5">
+												<input id="email" name="email" type="text" placeholder="Enter email" class="form-control input-md" required="">
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group">
+											<label class="col-md-2 control-label" for="mobile">mobile</label>
+											<div class="col-md-5">
+												<input id="mobile" name="mobile" type="text" placeholder="Enter mobile" class="form-control input-md" required="">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="gender" class="col-sm-2 col-md-2 control-label text-right">Gender</label>
+											<div class="col-sm-7 col-md-7">
+												<div class="input-group">
+													<div id="radioBtn" class="btn-group">
+														<a class="btn btn-success btn-sm active" data-toggle="gender" data-title="Y">Male</a>
+														<a class="btn btn-success btn-sm notActive" data-toggle="gender" data-title="N">Female</a>
+													</div>
+													<input type="hidden" name="gender" id="gender">
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label class="col-md-2 control-label" for="Country">Country </label>
+											<div class="col-md-3">
+												<div class="btn-group">
+													<button class="btn btn-success" data-label-placement>Select Country</button>
+													<button data-toggle="dropdown" class="btn btn-success dropdown-toggle"><span class="caret"></span></button>
+													<ul class="dropdown-menu">
+														<li><input type="radio" id="country1" name="Country" value="1"><label for="country1">Egypt</label></li>
+														<li><input type="radio" id="country2" name="Country" value="2"><label for="country2">Paris</label></li>
+														<li><input type="radio" id="country3" name="Country" value="3"><label for="country3">Madrid</label></li>
+														<!-- Other items -->
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label class="col-md-2 control-label" for="City">City </label>
+											<div class="col-md-3">
+												<div class="btn-group">
+													<button class="btn btn-success" data-label-placement>Select City</button>
+													<button data-toggle="dropdown" class="btn btn-success dropdown-toggle"><span class="caret"></span></button>
+													<ul class="dropdown-menu">
+														<li><input type="radio" id="city1" name="city" value="1"><label for="city1">Cairo</label></li>
+														<li><input type="radio" id="city2" name="city" value="2"><label for="city2">Alex</label></li>
+														<li><input type="radio" id="city3" name="<city></city>" value="3"><label for="city3">Menoufia</label></li>
+														<!-- Other items -->
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group">
+											<label class="col-md-2 control-label" for="address">address</label>
+											<div class="col-md-5">
+												<input id="address" name="address" type="text" placeholder="Enter address" class="form-control input-md" required="">
+											</div>
+										</div>
+										<hr>
+										<h3>Additional information</h3><br>
+
+										<!-- Text input-->
+										<div class="form-group">
+											<label class="col-md-2 control-label" for="fov">Field of study</label>
+											<div class="col-md-5">
+												<input id="fov" name="fov" type="text" placeholder="Enter Field of study" class="form-control input-md" required="">
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group">
+											<label class="col-md-2 control-label" for="gy">Graduation year</label>
+											<div class="col-md-5">
+												<input id="gy" name="gy" type="text" placeholder="Enter Graduation year" class="form-control input-md" required="">
+											</div>
+										</div>
+										<!-- Button -->
+										<div class="form-group">
+											<div class="col-md-2 col-md-offset-10">
+												<a class="btn btn-success" data-toggle="modal" data-target="#terms">Submit</a>
+											</div>
+										</div>
+
+									</fieldset>
+								</form>
+								<!--END-->
+							</div>
+						</div>
+					</div>
+
+
+					<div class="modal fade" id="terms" tabindex="-1"><div class="modal-dialog"><div class="modal-content">
+						<div class="modal-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto id quia fugit impedit, ipsa temporibus corporis incidunt autem et, ex explicabo nam optio voluptatem adipisci libero molestiae, at error inventore?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto id quia fugit impedit, ipsa temporibus corporis incidunt autem et, ex explicabo nam optio voluptatem adipisci libero molestiae, at error inventore?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto id quia fugit impedit, ipsa temporibus corporis incidunt autem et, ex explicabo nam optio voluptatem adipisci libero molestiae, at error inventore?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto id quia fugit impedit, ipsa temporibus corporis incidunt autem et, ex explicabo nam optio voluptatem adipisci libero molestiae, at error inventore?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto id quia fugit impedit, ipsa temporibus corporis incidunt autem et, ex explicabo nam optio voluptatem adipisci libero molestiae, at error inventore?</p>
+							<button id="to_affiliate" class="btn btn-success">Accept</button>
+						
+						</div>
+					</div></div></div>
+
+					<div class="tab-pane" id="Affiliate">
+						<div class="content-pane">
+							<div class="container-fluid">
+								<!-- Affiliate information form -->
+								 <div class="alert alert-success">
+									 <p><i class="glyphicon glyphicon-usd"></i> get more points and save money</p>
+								 </div>
+								 <div class="table-responsive">
+									 <table class="table table-striped table-hover">
+										 <thead>
+										 <tr>
+											 <th>Action</th>
+											 <th colspan="2">gift</th>
+										 </tr>
+										 </thead>
+										 <tr>
+											 <td><i class="glyphicon glyphicon-user"></i> invite friend</td>
+											 <td>get <span class="text-success"><strong>50</strong> points/friend</span></td>
+											 <td class="text-right">
+												 <a href="#" class="btn btn-xs btn-default">Send by email</a>
+												 <a href="#" class="btn btn-xs btn-success">Rizzmi message</a>
+												 <a href="#" class="btn btn-xs btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
+												 <a href="#" class="btn btn-xs btn-info"><i class="fa fa-linkedin"></i>  Linkedin</a>
+											 </td>
+										 </tr>
+										 <tr>
+											 <td><i class="fa fa-facebook"></i> share on Facebook</td>
+											 <td>get <span class="text-success"><strong>100</strong> points</span></td>
+											 <td class="text-right"><a href="#" class="btn btn-xs btn-primary"><i class="fa fa-facebook"></i> Facebook</a></td>
+										 </tr>
+										 <tr>
+											 <td><i class="fa fa-twitter"></i> share on Twitter</td>
+											 <td>get <span class="text-success"><strong>100</strong> points</span></td>
+											 <td class="text-right"><a href="#" class="btn btn-xs btn-info"><i class="fa fa-twitter"></i> Twitter</a></td>
+										 </tr>
+										 <tr>
+											 <td><i class="fa fa-heart"></i> friend refrals</td>
+											 <td colspan="2">get <span class="text-success"><strong>400</strong> points</span></td>
+										 </tr>
+									 </table>
+								 </div>
+
+								 <div class="progress" style="background-color: slategray; height: 40px;">
+									<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+										<h4>Current Points : 2000</h4> 
+									</div>
+								 </div>
+
+								 <div class="table-responsive">
+									 <table class="table table-striped table-hover">
+										 <thead>
+										 <tr>
+											 <th colspan="2"> Disscounts </th>
+										 </tr>
+										 </thead>
+										 <tbody>
+										 <tr>
+											 <td><strong>500 points</strong></td>
+											 <td>5% disscount</td>
+										 </tr>
+										 <tr>
+											 <td><strong>1000 points</strong></td>
+											 <td>10% disscount</td>
+										 </tr>										 
+										 <tr>
+											 <td><strong>2000 points</strong></td>
+											 <td>15% disscount</td>
+										 </tr>										 
+										 <tr>
+											 <td><strong>3000 points</strong></td>
+											 <td>20% disscount</td>
+										 </tr>	
+										 <tr>
+											 <td><strong>5000 points</strong></td>
+											 <td>25% disscount</td>
+										 </tr>	
+										 </tbody>										 
+									 </table>
+								 </div>
+								 <a href="#" class="btn btn-success pull-right" id="to_payment">submit</a>
+								<!--END-->
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="Payment">
+						<div class="content-pane">
+							<div class="container-fluid">
+								<h3 class="page-header">Payment options</h3>
+								<div class="row">
+									<div class="col-xs-12 col-md-6">
+										<!-- CREDIT CARD FORM STARTS HERE -->
+										<div class="panel panel-default credit-card-box">
+											<div class="panel-heading display-table" >
+												<div class="row display-tr" >
+													<h3 class="panel-title display-td" >Payment Details</h3>
+													<div class="display-td" >                            
+														<img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+													</div>
+												</div>                    
+											</div>
+											<div class="panel-body">
+												<form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+													<div class="row">
+														<div class="col-xs-12">
+															<div class="form-group">
+																<label for="cardNumber">CARD NUMBER</label>
+																<div class="input-group">
+																	<input type="tel" class="form-control" name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number" required />
+																	<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+																</div>
+															</div>                            
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-7 col-md-7">
+															<div class="form-group">
+																<label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+																<input type="tel" class="form-control" name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required />
+															</div>
+														</div>
+														<div class="col-xs-5 col-md-5 pull-right">
+															<div class="form-group">
+																<label for="cardCVC">CV CODE</label>
+																<input type="tel" class="form-control" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required />
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-12">
+															<div class="form-group">
+																<label for="couponCode">COUPON CODE</label>
+																<input type="text" class="form-control" name="couponCode" />
+															</div>
+														</div>                        
+													</div>
+													<div class="row">
+														<div class="col-xs-12">
+															<button class="to_submit subscribe btn btn-success btn-lg btn-block" type="button">Pay For Course</button>
+														</div>
+													</div>
+													<div class="row" style="display:none;">
+														<div class="col-xs-12">
+															<p class="payment-errors"></p>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>            
+									</div>
+									<!-- CREDIT CARD FORM ENDS HERE -->
+									
+									<div class="col-md-6" style="height: 250px;" >
+										<div class="form-group">
+											<label for="couponCode">Enter offline payment code</label>
+											<input type="text" class="form-control" name="couponCode" />
+										</div>
+										<a class="to_submit btn btn-success" style="width: 100%"><h4 style="margin: 5px;">Submit</h4></a>
+										<h3 class="text-center">or</h3>
+										<p><strong>Pay at the first day in the course</strong></p> 
+										<a class="to_submit btn btn-success" style="width: 100%"><h4 style="margin: 5px;">Pay at F2F</h4></a>
+									</div>
+								</div>  
+							</div>
+						</div>
+					</div>
+
+
+					<div class="tab-pane" id="Result">
+						<div class="content-pane">
+							<div class="container-fluid">
+								<!-- Registeration Result -->
+								<h2 class="text-success">congratulation!</h2>
+								
+								<h4>Thank you for registering for the Social media Course!<br>
+								<small>a copy of this will be sent to your email with account access info.</small></h4>
+								<hr>
+								<p>
+									<strong>Your code </strong>: RZ4567649<br>
+									<strong>course Price </strong>: 380 L.E<br>
+									<strong>you will pay </strong>: 300 L.E
+								</p>
+								<p> course starts at [time and date] and will be held at [venue and address]. Here is a 
+					    			<button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#map">link</button>
+									 to the map.<br><strong>Thank you and see you at the Course !</strong></p>
+                   	
+								 <a href="Search Result.html" class="btn btn-success pull-right">got it</a>
+								
+								<!--END-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="map" tabindex="-1"><div class="modal-dialog"><div class="modal-content">
+					<div class="modal-body">
+						<img src="img/map.jpg" class="img img-responsive" alt="">
+					</div>
+				</div></div></div>
+			</section>
+			<section class="col-xs-3" style="margin-top: 110px;">
+				<div class="content-pane">
+					<p><strong>Provided by: </strong> <br></p>
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<img src="img/person-icon.png" alt="" class="img-responsive img-circle" style="width: 100px;height: 100px;"><br>
+						</div>
+						<div class="col-md-6 text-center">
+							<img src="img/person-icon.png" alt="" class="img-responsive img-circle" style="width: 100px;height: 100px;"><br>
+						</div>
+					</div>
+					<div class="table-responsive">
+						<table class="table" style="margin-bottom: 0">
+							<tr>
+								<th colspan="2">Course Info</th>
+							</tr>
+							<tr>
+								<td>Lectures <br>Length<br>Category<br>Skill level<br>Language</td>
+								<td><strong>13 Lecture<br>24 hours<br>Business<br>All levels<br>Arabic</strong></td>
+							</tr>
+							<tr>
+								<td>Estimated start <br>Estimated end</td>
+								<td><strong>5 OCT 2017<br>8 NOV 2017</strong></td>
+							</tr>
+							<tr>
+								<td>
+									<s>Early bird</s><br><strong><span class="text-success">Current group</span></strong><br>Late group</td>
+								<td><strong><s>300 LE</s><br><span class="text-success">350 LE</span><br>400 LE</strong></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	</div>
+	<!-- body end -->
+
+	<div class="footer" style="background-color: #5cb85c; height: 90px; clear: both; margin-top: 50px;">
+		<div class="container" style="padding-top: 20px;">
+			<div class="row">
+				<div class="col-md-8">
+					<p id="fotter_text">
+						<a href="#">About Us</a> | <a href="#">Rezzmi for Business</a> | <a href="#">Become an Instructor</a> | <a href="#">Affiliates</a>						| <a href="#">blog</a> | <a href="#">support</a> | <a href="#">careers</a> | <a href="#">Policy</a> <br><br> Copyright
+						© 2017 Rizzmi</p>
+				</div>
+				<div class="col-md-4" style="height: 70px;">
+					<ul class="social-network social-circle push-right">
+						<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+						<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/dropdown_enhancement.js"></script>
+	<script src="js/bootstrap-slider.js"></script>
+	
+
+	<script>
+		$('#radioBtn a').on('click', function(){
+		var sel = $(this).data('title');
+		var tog = $(this).data('toggle');
+		$('#'+tog).prop('value', sel);
+		
+		$('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
+		$('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
+		})
+
+		$('.toTwo').on('click', function(){
+			$('#Register').removeClass("active");
+			$('#Basic').addClass("active");
+		})
+
+		$('#to_affiliate').on('click', function(){
+			$('#Basic').removeClass("active");
+			$('#Affiliate').addClass("active");
+			$('#terms').hide();
+			$('body').removeClass('modal-open');
+			$('.modal-backdrop').remove();
+		})
+
+
+		$('#to_payment').on('click', function(){
+			$('#Affiliate').removeClass("active");
+			$('#Payment').addClass("active");
+		})
+		
+		$('.to_submit').on('click', function(){
+			$('#Payment').removeClass("active");
+			$('#Result').addClass("active");
+		})
+
+		$("#points").slider({
+		formatter: function(value) {
+			return 'Your Points: ' + value;
+		}
+		
+		});
+	</script>
+</body>
+
+</html>
