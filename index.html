@@ -1,212 +1,752 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Rizzmi - get started</title>
-	<link rel="shortcut icon" type="image/x-icon" href="img/fav.ico" />	
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/full-slider.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+	<title>Search Result</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/fav.ico" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/StudentMain.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+				<a class="navbar-brand" href="Search Result.html">Rizzmi</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav ">
+					<li><a href="Search Result.html"><i class="glyphicon glyphicon-home"> </i> Home</a></li>
+					<li><a href="Profile.html"><i class="glyphicon glyphicon-user"> </i> Profile</a></li>
+					<li><span class="badge badge-important">2</span><a href="#"><i class="fa fa-bell-o fa-lg" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
+					<li>
+						<form class="navbar-form">
+							<div class="input-group">
+								<div class="input-group-btn">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1"> Browse <span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+									</ul>
+								</div>
+								<input type="text" class="form-control" placeholder="Search" value="">
+								<div class="input-group-btn"><a class="btn btn-success" href="Search Result.html"><i class="glyphicon glyphicon-search"></i></a></div>
+							</div>
+						</form>
+					</li>
+				</ul>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="profile.html">
-                    <img src="img/logo.png" alt="" style="width: 100px; margin-top: -5px;">
-                    </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                </ul>
-                 <form class="navbar-form navbar-right">
-                    <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email">
-                    <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <a class="btn btn-success" href="Instructor_index.html">Login</a>
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#signUp">Sign up</button>
-                </form>
-        </div>
-        <!-- /.container -->
-    </nav>
-
-
-
-
-
-
-
-    <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <!--<li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>-->
-        </ol>
-
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('img/asd.png');"></div>
-                <!--<div class="carousel-caption">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 panel " style="background-color: grey; opacity: 0.8;">
-                            <div style=" margin-bottom: 50px; height: 250px">
-                                <img src="img/getimage.png" class="img img-responsive img-rounded" alt="" style="margin-top: 10px;">
-                                <h1 style="font-size: 16pt; margin-bottom: 10px;">Rezzmi helps you connect with learning community</h1>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="input-group" style="margin-bottom: 15px;">
-                                            <input type="text" class="form-control" placeholder="Search for courses, instructors, organizations and locations">
-			                                <div class="input-group-btn"><a class="btn btn-success" href="Search Result.html"><i class="glyphicon glyphicon-search"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-                </div>
-            </div>
-<!--
-            <div class="item">
-                <div class="fill" style="background-image:url('img/Business-Plan-Presentations.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 2</h2>
-                    
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('img/How_to_Utilize_the_Latest_Technology_for_Your_Business_Presentations.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 3</h2>
-                </div>
-            </div>-->
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
+                <img src="img/me-flat.png" class="img-responsive img-circle" width="30px" height="30px">
+            </span>
+            <span class="user-name">John Doe</span>
+            <b class="caret"></b>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
- <div class="modal fade" id="signUp" tabindex="-1">
-        <div class="modal-dialog"><div class="modal-content">
-            <div class="modal-header">
+						<ul class="dropdown-menu">
+							<li>
+								<div class="navbar-content">
+									<div class="row">
+										<div class="col-md-4">
+											<img src="img/me-flat.png" class="img-responsive" style="margin-bottom: 15px;" />
+										</div>
+										<div class="col-md-8">
+											<span>John Doe</span>
+											<p class="text-muted small">example@pods.tld</p>
+											<div class="divider">
+											</div>
+											<a href="Profile.html" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-user" aria-hidden="true"></i> Profile</a>
+											<a href="#" class="btn btn-info btn-xs"><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> Settings</a>
+											<a href="#" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-off" aria-hidden="true"></i> </a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
 
-            <h1>Sign Up</h1>
-            </div>
-            <div class="modal-body">
-            <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="form-group">
-                    <div class="btn btn-info">Sign Up with facebook <i class="glyphicon glyphicon-search"></i></div>
-                    </div><div class="form-group">
-                    <div class="btn btn-info">Sign Up with Linkedin <i class="glyphicon glyphicon-search"></i></div>
-                    </div><div class="form-group">
-                    <div class="btn btn-warning">Sign Up with Google+ <i class="glyphicon glyphicon-search"></i></div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="container-fluid">
-                    <form class="form-horizontal">
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="First Name">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Last Name">
-                            </div>
-                        </div>
-                    </div><div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email">
-                    </div><div class="form-group">
-                    <input type="text" class="form-control" placeholder="Phone Number">
-                    </div><div class="form-group">
-                    <input type="password" class="form-control" placeholder="New Password">
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Country">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="State">
-                            </div>
-                        </div>
-                    </div><div class="form-group">
-                    <input type="text" class="form-control" placeholder="Birthdate">
-                    </div><div class="form-group">
-                        <div class="radio">
-                            <label class="radio-inline"><input name="gender" type="radio"> male</label>
-                            <label class="radio-inline"><input name="gender" type="radio"> female</label>
-                        </div>
-                    </div><div class="form-group">
-                        <div class="radio">
-                            <label class="radio-inline"><input name="type" type="radio"> student</label>
-                            <label class="radio-inline"><input name="type" type="radio"> instructor</label>
-                        </div>
-                    </div><div class="form-group">
-                    <button type="submit" class="btn btn-success pull-right" data-toggle="modal" data-target="#signUp" formaction="Instructor_index.html">Sign up</button>
-                    </div>
-                    </div>
-                    </div>
-                </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<!-- body start -->
+
+		<!-- nav start -->
+		<nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" style="z-index: 10; left:5%; top: 50px;padding-top: 10px; background-color: white; border-bottom: 0;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="nav nav-pills " style="padding-top: 15px;">
+									<li class="active"><a href="#courses" data-toggle="tab">Courses (15)</a></li>
+									<li><a href="#instructors" data-toggle="tab">Instructors (3)</a></li>
+									<li><a href="#organizations" data-toggle="tab">Organizations (5)</a></a>
+									</li>
+									<li><a href="#students" data-toggle="tab">Students (40)</a></a>
+									</li>
+									<li><a href="#groups" data-toggle="tab">Groups (8)</a></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- nav end -->
+
+		<div class="row">
+			<section class="col-xs-12" style="margin-top: 110px;">
+				<div class="tab-content">
+					<div class="tab-pane active" id="courses">
+						<div class="content-pane">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-8">
+										<form class="form-inline">
+											<select class="form-control" id="itm1"> 
+				                    <option>Country</option>
+				                    <option>Country1</option>
+				                    <option>Country2</option>
+				                    <option>Country3</option>
+				                    <option>Country4</option>
+				                </select>
+											<select class="form-control" id="itm2"> 
+				                    <option>State</option>
+				                    <option>State1</option>
+				                    <option>State2</option>
+				                    <option>State3</option>
+				                    <option>State4</option>
+				                </select>
+											<select class="form-control" id="itm3"> 
+				                    <option>Price</option>
+				                    <option>Price</option>
+				                    <option>Price</option>
+				                    <option>Price</option>
+				                    <option>Price</option>
+				                </select>
+											<select class="form-control" id="itm3"> 
+				                    <option>Level</option>
+				                    <option>Level1</option>
+				                    <option>Level2</option>
+				                    <option>Level3</option>
+				                    <option>Level4</option>
+				                </select>
+											<select class="form-control" id="itm3"> 
+				                    <option>Statue</option>
+				                    <option>Statue1</option>
+				                    <option>Statue2</option>
+				                    <option>Statue3</option>
+				                    <option>Statue4</option>
+				                </select>
+										</form>
+									</div>
+									<div class="col-md-4 pull-right">
+										<form action="" class="form-inline">
+											<div class="form-group pull-right">
+												<label class="control-label" for="sort">Sort by: </label>
+												<select id="sort" name="sort" class="form-control">
+										    <option value="1">Most Relevent</option>
+										    <option value="2">Most Reviewd</option>
+										    <option value="3">Highest Rated</option>
+										    <option value="4">Newest</option>
+										    <option value="5">Price: Low to High</option>
+										    <option value="6">Price: High to Low</option>
+										</select>
+											</div>
+										</form>
+									</div>
+								</div>
+								<hr class="featurette-divider">
+								<!-- panels start here -->
+								<!-- panel -->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="panel panel-default">
+											<div class="panel-body course-component">
+												<div class="media">
+													<div class="media-left">
+														<a href="#"><img src="" alt="" class="media-object course-img"></a>
+													</div>
+													<div class="media-body">
+														<div class="row">
+															<div class="col-md-9">
+																<br>
+																<h3 class="media-heading course-heading"> Sales Training: Practical Sales Techniques</h3>
+																<p><small> Chris Croft . Management Trainer, speaker, author</small></p>
+																<p><strong>Sales hacking:</strong> essential sales strategies and sales techniques to sell just everything!</p>
+																<p><i class="glyphicon glyphicon-play-circle"></i> 30 lecture <i class="glyphicon glyphicon-time"></i> 43 min
+																	<i class="glyphicon glyphicon-equalizer"></i> All Levels</p>
+															</div>
+															<div class="col-md-3 pull-right text-center">
+																<br><a href="Course Profile.html" class="btn btn-success">sign up</a><br><br>
+																<p><strong>$130</strong>
+																	<s>$400</s>
+																</p>
+																<p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+																	<i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><br>4.6 (120 ratings)</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- panel end -->
+								<!-- panel -->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="panel panel-default">
+											<div class="panel-body course-component">
+												<div class="media">
+													<div class="media-left">
+														<a href="#"><img src="" alt="" class="media-object course-img"></a>
+													</div>
+													<div class="media-body">
+														<div class="row">
+															<div class="col-md-9">
+																<br>
+																<h3 class="media-heading course-heading"> Sales Training: Practical Sales Techniques</h3>
+																<p><small> Chris Croft . Management Trainer, speaker, author</small></p>
+																<p><strong>Sales hacking:</strong> essential sales strategies and sales techniques to sell just everything!</p>
+																<p><i class="glyphicon glyphicon-play-circle"></i> 30 lecture <i class="glyphicon glyphicon-time"></i> 43 min
+																	<i class="glyphicon glyphicon-equalizer"></i> All Levels</p>
+															</div>
+															<div class="col-md-3 pull-right text-center">
+																<br><a href="Course Profile.html" class="btn btn-success">sign up</a><br><br>
+																<p><strong>$130</strong>
+																	<s>$400</s>
+																</p>
+																<p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+																	<i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><br>4.6 (120 ratings)</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- panel end -->
+								<!-- panel -->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="panel panel-default">
+											<div class="panel-body course-component">
+												<div class="media">
+													<div class="media-left">
+														<a href="#"><img src="" alt="" class="media-object course-img"></a>
+													</div>
+													<div class="media-body">
+														<div class="row">
+															<div class="col-md-9">
+																<br>
+																<h3 class="media-heading course-heading"> Sales Training: Practical Sales Techniques</h3>
+																<p><small> Chris Croft . Management Trainer, speaker, author</small></p>
+																<p><strong>Sales hacking:</strong> essential sales strategies and sales techniques to sell just everything!</p>
+																<p><i class="glyphicon glyphicon-play-circle"></i> 30 lecture <i class="glyphicon glyphicon-time"></i> 43 min
+																	<i class="glyphicon glyphicon-equalizer"></i> All Levels</p>
+															</div>
+															<div class="col-md-3 pull-right text-center">
+																<br><a href="Course Profile.html" class="btn btn-success">sign up</a><br><br>
+																<p><strong>$130</strong>
+																	<s>$400</s>
+																</p>
+																<p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+																	<i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><br>4.6 (120 ratings)</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- panel end -->
+								<!-- panel -->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="panel panel-default">
+											<div class="panel-body course-component">
+												<div class="media">
+													<div class="media-left">
+														<a href="#"><img src="" alt="" class="media-object course-img"></a>
+													</div>
+													<div class="media-body">
+														<div class="row">
+															<div class="col-md-9">
+																<br>
+																<h3 class="media-heading course-heading"> Sales Training: Practical Sales Techniques</h3>
+																<p><small> Chris Croft . Management Trainer, speaker, author</small></p>
+																<p><strong>Sales hacking:</strong> essential sales strategies and sales techniques to sell just everything!</p>
+																<p><i class="glyphicon glyphicon-play-circle"></i> 30 lecture <i class="glyphicon glyphicon-time"></i> 43 min
+																	<i class="glyphicon glyphicon-equalizer"></i> All Levels</p>
+															</div>
+															<div class="col-md-3 pull-right text-center">
+																<br><a href="Course Profile.html" class="btn btn-success">sign up</a><br><br>
+																<p><strong>$130</strong>
+																	<s>$400</s>
+																</p>
+																<p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+																	<i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><br>4.6 (120 ratings)</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- panel end -->
+								<!-- panel -->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="panel panel-default">
+											<div class="panel-body course-component">
+												<div class="media">
+													<div class="media-left">
+														<a href="#"><img src="" alt="" class="media-object course-img"></a>
+													</div>
+													<div class="media-body">
+														<div class="row">
+															<div class="col-md-9">
+																<br>
+																<h3 class="media-heading course-heading"> Sales Training: Practical Sales Techniques</h3>
+																<p><small> Chris Croft . Management Trainer, speaker, author</small></p>
+																<p><strong>Sales hacking:</strong> essential sales strategies and sales techniques to sell just everything!</p>
+																<p><i class="glyphicon glyphicon-play-circle"></i> 30 lecture <i class="glyphicon glyphicon-time"></i> 43 min
+																	<i class="glyphicon glyphicon-equalizer"></i> All Levels</p>
+															</div>
+															<div class="col-md-3 pull-right text-center">
+																<br><a href="Course Profile.html" class="btn btn-success">sign up</a><br><br>
+																<p><strong>$130</strong>
+																	<s>$400</s>
+																</p>
+																<p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+																	<i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><br>4.6 (120 ratings)</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- panel end -->
+								<!-- panel -->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="panel panel-default">
+											<div class="panel-body course-component">
+												<div class="media">
+													<div class="media-left">
+														<a href="#"><img src="" alt="" class="media-object course-img"></a>
+													</div>
+													<div class="media-body">
+														<div class="row">
+															<div class="col-md-9">
+																<br>
+																<h3 class="media-heading course-heading"> Sales Training: Practical Sales Techniques</h3>
+																<p><small> Chris Croft . Management Trainer, speaker, author</small></p>
+																<p><strong>Sales hacking:</strong> essential sales strategies and sales techniques to sell just everything!</p>
+																<p><i class="glyphicon glyphicon-play-circle"></i> 30 lecture <i class="glyphicon glyphicon-time"></i> 43 min
+																	<i class="glyphicon glyphicon-equalizer"></i> All Levels</p>
+															</div>
+															<div class="col-md-3 pull-right text-center">
+																<br><a href="Course Profile.html" class="btn btn-success">sign up</a><br><br>
+																<p><strong>$130</strong>
+																	<s>$400</s>
+																</p>
+																<p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+																	<i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><br>4.6 (120 ratings)</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- panel end -->
+
+							</div>
+						</div>
+					</div>
+					<!-- end course tab -->
+
+					<div class="tab-pane" id="instructors">
+						<div class="content-pane">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-8">
+										<form class="form-inline">
+											<select class="form-control" id="itm1"> 
+				                    <option>Country</option>
+				                    <option>Country1</option>
+				                    <option>Country2</option>
+				                    <option>Country3</option>
+				                    <option>Country4</option>
+				                </select>
+											<select class="form-control" id="itm2"> 
+				                    <option>State</option>
+				                    <option>State1</option>
+				                    <option>State2</option>
+				                    <option>State3</option>
+				                    <option>State4</option>
+				                </select>
+										</form>
+									</div>
+									<div class="col-md-4 pull-right">
+										<form action="" class="form-inline">
+											<div class="form-group pull-right">
+												<label class="control-label" for="sort">Sort by: </label>
+												<select id="sort" name="sort" class="form-control">
+										    <option value="1">Rating</option>
+										    <option value="2">Reviews</option>
+										    <option value="3">Students</option>
+										    <option value="4">Courses</option>
+										</select>
+											</div>
+										</form>
+									</div>
+								</div>
+								<hr class="featurette-divider">
+								<!-- panel -->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="panel panel-default">
+											<div class="panel-body course-component">
+												<div class="media">
+													<div class="media-left">
+														<a href="#"><img src="" alt="" class="media-object instructor-img"></a>
+													</div>
+													<div class="media-body">
+														<div class="row">
+															<div class="col-md-9">
+																<br>
+																<h3 class="media-heading course-heading"> Instructor Name</h3>
+																<p><small>Instructor Profession</small></p>
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+																	magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																	consequat.
+																</p>
+																<a class="btn btn-sm btn-success"><i class="glyphicon glyphicon-envelope"> </i> Message</a>
+																<a class="btn btn-sm btn-success"><i class="glyphicon glyphicon-share-alt"> </i> follow</a>
+															</div>
+															<div class="col-md-3 pull-right text-left">
+																<br>
+																<p><i class="glyphicon glyphicon-star"></i> <strong> 4.6</strong> Average rating </p>
+																<p><i class="glyphicon glyphicon-comment"></i> <strong> 8</strong> Reviews</p>
+																<p><i class="glyphicon glyphicon-user"></i> <strong> 1,322</strong> Student </p>
+																<p><i class="glyphicon glyphicon-play-circle"></i> <strong> 3</strong> Courses</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- panel end -->
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="organizations">
+						<div class="content-pane">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-8">
+										<form class="form-inline">
+											<select class="form-control" id="itm1"> 
+				                    <option>Country</option>
+				                    <option>Country1</option>
+				                    <option>Country2</option>
+				                    <option>Country3</option>
+				                    <option>Country4</option>
+				                </select>
+											<select class="form-control" id="itm2"> 
+				                    <option>State</option>
+				                    <option>State1</option>
+				                    <option>State2</option>
+				                    <option>State3</option>
+				                    <option>State4</option>
+				                </select>
+										</form>
+									</div>
+									<div class="col-md-4 pull-right">
+										<form action="" class="form-inline">
+											<div class="form-group pull-right">
+												<label class="control-label" for="sort">Sort by: </label>
+												<select id="sort" name="sort" class="form-control">
+										    <option value="1">Rating</option>
+										    <option value="2">Reviews</option>
+										    <option value="3">Students</option>
+										    <option value="4">Courses</option>
+										</select>
+											</div>
+										</form>
+									</div>
+								</div>
+								<hr class="featurette-divider">
+								<!-- panel -->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="panel panel-default">
+											<div class="panel-body course-component">
+												<div class="media">
+													<div class="media-left">
+														<a href="#"><img src="" alt="" class="media-object instructor-img"></a>
+													</div>
+													<div class="media-body">
+														<div class="row">
+															<div class="col-md-9">
+																<br>
+																<h3 class="media-heading course-heading"> Organization Name <small class="text-success">City,Country</small></h3>
+																<p><small>Instructor Profession</small></p>
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+																	magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																	consequat.
+																</p>
+																<a class="btn btn-sm btn-success"><i class="glyphicon glyphicon-envelope"> </i> Message</a>
+																<a class="btn btn-sm btn-success"><i class="glyphicon glyphicon-share-alt"> </i> follow</a>
+															</div>
+															<div class="col-md-3 pull-right text-left">
+																<br>
+																<p><i class="glyphicon glyphicon-star"></i> <strong> 4.6</strong> Average rating </p>
+																<p><i class="glyphicon glyphicon-comment"></i> <strong> 8</strong> Reviews</p>
+																<p><i class="glyphicon glyphicon-user"></i> <strong> 1,322</strong> Student </p>
+																<p><i class="glyphicon glyphicon-play-circle"></i> <strong> 3</strong> Courses</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- panel end -->
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="students">
+						<div class="content-pane">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-8">
+										<form class="form-inline">
+											<select class="form-control" id="itm1"> 
+				                    <option>Country</option>
+				                    <option>Country1</option>
+				                    <option>Country2</option>
+				                    <option>Country3</option>
+				                    <option>Country4</option>
+				                </select>
+											<select class="form-control" id="itm2"> 
+				                    <option>State</option>
+				                    <option>State1</option>
+				                    <option>State2</option>
+				                    <option>State3</option>
+				                    <option>State4</option>
+				                </select>
+										</form>
+									</div>
+									<div class="col-md-4 pull-right">
+										<form action="" class="form-inline">
+											<div class="form-group pull-right">
+												<label class="control-label" for="sort">Sort by: </label>
+												<select id="sort" name="sort" class="form-control">
+									    <option value="1">Followers</option>
+									    <option value="2">Following</option>
+									    <option value="3">Groups</option>
+									    <option value="4">Courses</option>
+									</select>
+											</div>
+										</form>
+									</div>
+									<hr class="featurette-divider">
+									<div class="col-md-12">
+										<label for="primary" class="btn btn-primary">Artistic Design <input type="checkbox" id="primary" class="badgebox"><span class="badge">&check;</span></label>
+										<label for="info" class="btn btn-info">Sales&Marketing <input type="checkbox" id="info" class="badgebox"><span class="badge">&check;</span></label>
+										<label for="success" class="btn btn-success">Bussiness Development <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>
+										<label for="warning" class="btn btn-warning">Music <input type="checkbox" id="warning" class="badgebox"><span class="badge">&check;</span></label>
+										<label for="danger" class="btn btn-danger">IT <input type="checkbox" id="danger" class="badgebox"><span class="badge">&check;</span></label>
+									</div>
+								</div>
+							</div>
+							<hr class="featurette-divider">
+							<!-- panel -->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="panel panel-default">
+										<div class="panel-body course-component">
+											<div class="media">
+												<div class="media-left">
+													<a href="#"><img src="" alt="" class="media-object instructor-img"></a>
+												</div>
+												<div class="media-body">
+													<div class="row">
+														<div class="col-md-9">
+															<br>
+															<a href="Profile.html">
+																<h3 class="media-heading course-heading"> Student Name <small class="text-success">profession</small></h3>
+															</a>
+															<p><small>field of interest</small></p>
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+																magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat.
+															</p>
+															<a class="btn btn-sm btn-success"><i class="glyphicon glyphicon-envelope"> </i> Message</a>
+															<a class="btn btn-sm btn-success"><i class="glyphicon glyphicon-share-alt"> </i> follow</a>
+														</div>
+														<div class="col-md-3 pull-right text-left">
+															<br>
+															<p><i class="glyphicon glyphicon-user"></i> <strong> 234</strong> Follower </p>
+															<p><i class="glyphicon glyphicon-user"></i> <strong> 615</strong> Following</p>
+															<p><i class="glyphicon glyphicon-comment"></i> <strong> 16</strong> Groups</p>
+															<p><i class="glyphicon glyphicon-play-circle"></i> <strong> 3</strong> Courses</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- panel end -->
+						</div>
+					</div>
+					<div class="tab-pane" id="groups">
+						<div class="content-pane">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-8">
+										<form class="form-inline">
+											<select class="form-control" id="itm1"> 
+				                    <option>Country</option>
+				                    <option>Country1</option>
+				                    <option>Country2</option>
+				                    <option>Country3</option>
+				                    <option>Country4</option>
+				                </select>
+											<select class="form-control" id="itm2"> 
+				                    <option>State</option>
+				                    <option>State1</option>
+				                    <option>State2</option>
+				                    <option>State3</option>
+				                    <option>State4</option>
+				                </select>
+										</form>
+									</div>
+									<div class="col-md-4 pull-right">
+										<form action="" class="form-inline">
+											<div class="form-group pull-right">
+												<label class="control-label" for="sort">Sort by: </label>
+												<select id="sort" name="sort" class="form-control">
+									    <option value="1">Members</option>
+									    <option value="2">Activity</option>
+									</select>
+											</div>
+										</form>
+									</div>
+									<hr class="featurette-divider">
+									<div class="col-md-12">
+										<label for="primary" class="btn btn-primary">Course Groups<input type="checkbox" id="primary" class="badgebox"><span class="badge">&check;</span></label>
+										<label for="warning" class="btn btn-warning">Study Groups <input type="checkbox" id="warning" class="badgebox"><span class="badge">&check;</span></label>
+									</div>
+								</div>
+							</div>
+							<hr class="featurette-divider">
+							<!-- panel -->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="panel panel-default">
+										<div class="panel-body course-component">
+											<div class="media">
+												<div class="media-left">
+													<a href="#"><img src="" alt="" class="media-object instructor-img"></a>
+												</div>
+												<div class="media-body">
+													<div class="row">
+														<div class="col-md-12">
+															<br>
+															<h3 class="media-heading course-heading"> Group Name <small class="text-success">22 Member</small></h3>
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+																magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat.
+															</p>
+															<a class="btn btn-sm btn-success"><i class="glyphicon glyphicon-share-alt"> </i> Join</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- panel end -->
+						</div>
+					</div>
+				</div>
+		</div>
+		</section>
+	</div>
+	</div>
+	</div>
+	<!-- body end -->
 
 
+	<div class="footer" style="background-color: #5cb85c; height: 90px; clear: both; margin-top: 50px;">
+		<div class="container" style="padding-top: 20px;">
+			<div class="row">
+				<div class="col-md-8">
+					<p id="fotter_text">
+						<a href="#">About Us</a> | <a href="#">Rezzmi for Business</a> | <a href="#">Become an Instructor</a> | <a href="#">Affiliates</a>						| <a href="#">blog</a> | <a href="#">support</a> | <a href="#">careers</a> | <a href="#">Policy</a> <br><br> Copyright
+						© 2017 Rizzmi</p>
+				</div>
+				<div class="col-md-4" style="height: 70px;">
+					<ul class="social-network social-circle push-right">
+						<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+						<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
